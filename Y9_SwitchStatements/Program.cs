@@ -59,14 +59,23 @@
                     grade = 2;
                     break;
                 case double i when i > 5 && i < 14:
-                    grade = 8;
+                    grade = 1;
                     break;
-
+                default: 
+                    grade = 0;
+                    break;
+            }
+            if (grade > 0)
+            {
+                Console.WriteLine("You got a grade " +grade);
+            } else
+            {
+                Console.WriteLine("You got a U");
             }
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ExtGradeCalc();
         }
     }
 }
